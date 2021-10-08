@@ -65,9 +65,10 @@ def start(msg):
 
 if __name__ == "__main__":
     user_response = ''
-    print('Welcome! Write "end" to stop')
+    print('Bienvenido! Escriba "fin" para finalizar')
 
-    while user_response != 'end':
+    while user_response != 'fin':
         user_response = str(input(""))
-        AI_response = start(user_response)
-        print('AI:' + AI_response)
+        if user_response != 'fin':
+            AI_response = start(user_response)
+            print('AI:' + AI_response)

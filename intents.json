@@ -1,63 +1,48 @@
 {
     "intents": [
         {
-            "tag": "greeting",
+            "tag": "saludar",
             "patterns": [
-                "Hi there",
-                "How are you",
-                "Is anyone there?",
-                "Hey",
+                "Buenos dias",
+                "Buen dia",
+                "como estas",
                 "Hola",
-                "Hello",
-                "Good day"
+                "Hey"
             ],
             "responses": [
-                "Hi there, how can I help?"
-            ],
-            "context": [
-                ""
+                "Buen dias, en que lo puedo ayudar?"
             ]
         },
         {
-            "tag": "goodbye",
+            "tag": "despedirse",
             "patterns": [
-                "Bye",
-                "See you later",
-                "Goodbye",
-                "Nice chatting to you, bye",
-                "Till next time"
+                "Buen dia",
+                "Nos vemos despues",
+                "Hasta luego",
+                "Gracias por la ayuda",
+                "Chao",
+                "Gracias, buen dia"
             ],
             "responses": [
-                "Bye! Have a nice day"
-            ],
-            "context": [
-                ""
+                "Hasta luego! Que tenga un buen dia"
             ]
         },
         {
-            "tag": "thanks",
+            "tag": "gracias",
             "patterns": [
-                "Thanks",
-                "Thank you",
-                "That's helpful",
-                "Awesome, thanks",
-                "Thanks for helping me"
+                "Gracias",
+                "Fue util tu ayuda",
+                "Gracias por ayudarme"
             ],
             "responses": [
-                "Happy to help!"
-            ],
-            "context": [
-                ""
+                "Espero haber ayudado, para finalizar escribe 'fin'"
             ]
         },
         {
             "tag": "noanswer",
             "patterns": [],
             "responses": [
-                "Sorry, can't understand you"
-            ],
-            "context": [
-                ""
+                "Lo siento, no puedo entenderte"
             ]
         }
     ]
