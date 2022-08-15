@@ -8,10 +8,10 @@ from tensorflow.keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
 
-model = load_model('../util/chatbot_model.h5')
-intents = json.loads(open('../util/intents.json').read())
-words = pickle.load(open('../util/words.pkl', 'rb'))
-classes = pickle.load(open('../util/classes.pkl', 'rb'))
+model = load_model('./util/chatbot_model.h5')
+intents = json.loads(open('./util/intents.json').read())
+words = pickle.load(open('./util/words.pkl', 'rb'))
+classes = pickle.load(open('./util/classes.pkl', 'rb'))
 
 
 # User input processing

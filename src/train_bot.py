@@ -17,7 +17,7 @@ words = []
 classes = []
 documents = []
 ignore_words = ['?', '!']
-data_file = open('../util/intents.json').read()
+data_file = open('./util/intents.json').read()
 intents = json.loads(data_file)
 print(intents)
 
@@ -38,8 +38,8 @@ for intent in intents['intents']:
 
 words = [lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words]
 
-pickle.dump(words, open('../util/words.pkl', 'wb'))
-pickle.dump(classes, open('../util/classes.pkl', 'wb'))
+pickle.dump(words, open('./util/words.pkl', 'wb'))
+pickle.dump(classes, open('./util/classes.pkl', 'wb'))
 
 # preparation for network training
 training = []
@@ -78,6 +78,6 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 
 # fitting and saving the model
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=300, batch_size=5, verbose=1)
-model.save('chatbot_model.h5', hist)
+model.save('./util/chatbot_model.h5', hist)
 
 print("model created")
