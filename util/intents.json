@@ -4,8 +4,8 @@
             "tag": "saludar",
             "patterns": [
                 "Buenos dias",
-                "Buen dia",
-                "como estas",
+                "Buen día",
+                "Como estás?",
                 "Hola",
                 "Hey"
             ],
@@ -35,7 +35,7 @@
                 "Gracias por ayudarme"
             ],
             "responses": [
-                "Espero haber ayudado, para finalizar escribe 'fin'"
+                "Espero haber ayudado"
             ]
         },
         {

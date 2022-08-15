@@ -8,10 +8,10 @@ from tensorflow.keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
 
-model = load_model('chatbot_model.h5')
-intents = json.loads(open('intents.json').read())
-words = pickle.load(open('words.pkl', 'rb'))
-classes = pickle.load(open('classes.pkl', 'rb'))
+model = load_model('../util/chatbot_model.h5')
+intents = json.loads(open('../util/intents.json').read())
+words = pickle.load(open('../util/words.pkl', 'rb'))
+classes = pickle.load(open('../util/classes.pkl', 'rb'))
 
 
 # User input processing
@@ -61,14 +61,3 @@ def get_response(ints, intents_json):
 def start(msg):
     ints = prediction_calculation(msg, model)
     return get_response(ints, intents)
-
-
-if __name__ == "__main__":
-    user_response = ''
-    print('Bienvenido! Escriba "fin" para finalizar')
-
-    while user_response != 'fin':
-        user_response = str(input(""))
-        if user_response != 'fin':
-            AI_response = start(user_response)
-            print('AI:' + AI_response)
