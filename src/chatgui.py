@@ -6,6 +6,8 @@ import random
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
 
+from src.models import Message
+
 lemmatizer = WordNetLemmatizer()
 
 model = load_model('./util/chatbot_model.h5')
@@ -55,7 +57,8 @@ def get_response(ints, intents_json):
         if intent['tag'] == tag:
             result = random.choice(intent['responses'])
             break
-    return result
+    response = {"message": result, "id": "RECEIVE_ID"}
+    return Message(response)
 
 
 def start(msg):

@@ -10,7 +10,34 @@
                 "Hey"
             ],
             "responses": [
-                "Buen dias, en que lo puedo ayudar?"
+                "Buen dia, en que lo puedo ayudar?"
+            ]
+        },
+        {
+            "tag": "graficar",
+            "patterns": [
+                "grafica"
+            ],
+            "responses": [
+                "Abriendo grafica..."
+            ]
+        },
+        {
+            "tag": "instagram",
+            "patterns": [
+                "instagram"
+            ],
+            "responses": [
+                "Abriendo instagram..."
+            ]
+        },
+        {
+            "tag": "google",
+            "patterns": [
+                "google"
+            ],
+            "responses": [
+                "Abriendo google..."
             ]
         },
         {
