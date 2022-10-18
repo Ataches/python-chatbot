@@ -3,11 +3,11 @@
         {
             "tag": "saludar",
             "patterns": [
-                "Buenos dias",
-                "Buen día",
-                "Como estás?",
-                "Hola",
-                "Hey"
+                "buenosdias",
+                "buendia",
+                "comoestás?",
+                "hola",
+                "hey"
             ],
             "responses": [
                 "Buen dia, en que lo puedo ayudar?"
@@ -16,10 +16,15 @@
         {
             "tag": "graficar",
             "patterns": [
-                "grafica"
+                "grafica",
+                "visualizargrafica",
+                "vergrafica",
+                "graficarsemillas",
+                "versemilla",
+                "analizarsemilla"
             ],
             "responses": [
-                "Abriendo grafica..."
+                "Cual semilla quieres graficar?\n(ingresa el nombre de acuerdo al siguiente listado)\n\nF733\nLagunas\nF60\nF50\nF473\nCimarron barinas\nF2000\nOnly Rice 228\nColombia XXI"
             ]
         },
         {
@@ -43,12 +48,10 @@
         {
             "tag": "despedirse",
             "patterns": [
-                "Buen dia",
-                "Nos vemos despues",
-                "Hasta luego",
-                "Gracias por la ayuda",
-                "Chao",
-                "Gracias, buen dia"
+                "Nosvemosdespues",
+                "Hastaluego",
+                "Graciasporlaayuda",
+                "Chao"
             ],
             "responses": [
                 "Hasta luego! Que tenga un buen dia"
@@ -58,8 +61,8 @@
             "tag": "gracias",
             "patterns": [
                 "Gracias",
-                "Fue util tu ayuda",
-                "Gracias por ayudarme"
+                "Fueutiltuayuda",
+                "Graciasporayudarme"
             ],
             "responses": [
                 "Espero haber ayudado"
